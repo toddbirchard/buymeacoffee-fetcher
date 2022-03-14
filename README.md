@@ -10,3 +10,28 @@
 Fetch all donations associated with a **BuyMeACoffee** account, and write output to `./donations.json`. 
 
 _Note: This script is a WIP. Requests are not made asynchronously, and pagination is handled in a crude manner._ 
+
+## Installation and Setup
+
+### Install
+
+```shell
+git clone https://github.com/toddbirchard/buymeacoffee-fetcher.git
+cd buymeacoffee-fetcher
+make install
+```
+
+### Configure
+
+Obtain a BuyMeACoffee API token for your account from https://developers.buymeacoffee.com/. 
+
+Next, add a **.env** file with the following values:
+
+```shell
+ENVIRONMENT=development
+BUYMEACOFFEE_API_TOKEN=[YOUR_API_TOKEN]
+```
+
+### Usage
+
+Run the script with `make run`.
